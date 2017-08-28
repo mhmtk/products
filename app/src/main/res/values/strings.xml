@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">Products</string>
+  <string name="title_activity_product_detail">Product</string>
+  <string name="progress_dialog_message">Loading…</string>
+  <string name="no_data_to_show">Nothing here</string>
+  <string name="error_message_connection">Please check your internet connection</string>
+  <string name="error_message_download">Encountered a problem wihle fetching the data, please check your internet
+    connection and try again.
+  </string>
+  <string name="error_message_no_result">Found nothing to show</string>
+</resources>

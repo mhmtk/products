@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_product_detail"
+        tools:context="com.mhmt.products.com.mhmt.products.ui.productdetail.ProductDetailActivity"
+>
+  <data>
+    <variable name="product" type="com.mhmt.products.domain.Product"/>
+  </data>
+
+  <RelativeLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+  >
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_detail_image_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+    />
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:text="@{product.name}"
+        android:layout_marginTop="@dimen/default_margin"
+        android:paddingStart="@dimen/default_padding"
+        android:textSize="@dimen/header_text_size"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/text_view_name"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="@dimen/default_padding"
+        android:textSize="@dimen/header_text_size"
+        android:text='@{String.format("%s %s", product.salePrice.currency, product.salePrice.amount)}'
+    />
+
+  </RelativeLayout>
+
+</layout>
