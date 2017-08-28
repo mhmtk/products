@@ -34,6 +34,7 @@ public class DownloadProducts implements Runnable {
 
     } catch (IOException e) {
       e.printStackTrace();
+      eventBus.postSticky(new DownloadError());
     }
   }
 }
