@@ -1,6 +1,6 @@
 # Products
 
-A simple app demonstrating usage of Dagger 2, MVP, Unit testing, and a pinch of data-binding (because why not)
+A simple app demonstrating usage of Dagger 2, MVP, API consumption via Retrofit2 & OkHTTP3, Unit testing, and a pinch of data-binding (because why not)
 
 ## Getting Started
 
