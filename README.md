@@ -9,7 +9,6 @@ Nothing to do but clone this repo to see it at work.
 ## License
 
 This project is licensed under the MIT License
-``- see the [LICENSE.md](LICENSE.md) file for details``
 
 ## Acknowledgments
 
